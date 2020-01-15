@@ -1,7 +1,6 @@
 -   [tunailgaz.com](https://www.tunailgaz.com)
 -   [tunailgaz.github.io / github repo](https://github.com/tunailgaz/tunailgaz.github.io)
--   [radyo bilkent](http://188.166.30.186:8000/)
--   [radyo bilkent listen.pls](http://188.166.30.186:8000/listen.pls?sid=1)
+-   [Radio Bilkent](http://188.166.30.186:8000/) / [listen.pls](http://188.166.30.186:8000/listen.pls?sid=1) 
 
 ### todos
 
