@@ -1,11 +1,9 @@
-    
-
 - [tunailgaz.com](https://www.tunailgaz.com)
-- [github.io](https://github.tunailgaz.io)
+- [tunailgaz.github.io / github repo](https://github.com/tunailgaz/tunailgaz.github.io)
 
 ### todos
 
-- [ ]  Resources
+- [X]  Resources
 - [X]  Cloud development settings/environments and tools
 - [ ]  [The Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 - [ ]  Intl.RelativeTimeFormat
@@ -48,9 +46,9 @@
         ````
     
 -   Navicat 12 Premium
-    -   [Download Navicat 12.1 Premium](#link)
-    -   [Download Navicat kg project src](#link) 
-    -   [Download Navicat kgs](#link) 
+    -   [Download Navicat 12.1 Premium](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat121_premium_en_x64.rar)
+    -   [Download Navicat kg project src](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat-kg.zip) 
+    -   [Download Navicat kgs](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat-kg-for-x64.zip) 
     ```
         It has been tested on Navicat Premium 12.1.22
         And when i tested with 12.1.25 / 64-bit
