@@ -1,5 +1,5 @@
--   [tunailgaz.com](https://www.tunailgaz.com)
--   [tunailgaz.github.io / github repo](https://github.com/tunailgaz/tunailgaz.github.io)
+-   [tunailgaz.com](https://www.tunailgaz.com) / [repo](https://github.com/tunailgaz/tunailgaz-com)
+-   [tunailgaz.github.io](https://tunailgaz.github.io/) / [repo](https://github.com/tunailgaz/tunailgaz.github.io)
 -   [Radio Bilkent](http://188.166.30.186:8000/) / [listen.pls](http://188.166.30.186:8000/listen.pls?sid=1) 
 
 ### todos
