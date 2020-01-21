@@ -30,10 +30,14 @@ services:
 ###### ESLint Custom Rules
 ````
 "rules": {
-    "indent": ["error",4],
-    "semi": [2, "always"],
+    "indent": ["error", 4],
+    "semi": ["error", "always"],
     "require-await": "error",
-    "handle-callback-err": "warn"
+    "handle-callback-err": "warn",
+    "no-await-in-loop": "warn",
+    "no-async-promise-executor": "warn",
+    "no-console" : "error",
+    "camelcase" : "off"
 }
 ````
 
