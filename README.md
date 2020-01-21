@@ -27,6 +27,16 @@ services:
     <<: *default-opts
 ````
 
+###### ESLint Custom Rules
+````
+"rules": {
+    "indent": ["error",4],
+    "semi": [2, "always"],
+    "require-await": "error",
+    "handle-callback-err": "warn"
+}
+````
+
 # DevTools
 -   Cmder 
     -   [Download - cmder.zip latest windows](https://github.com/cmderdev/cmder/releases/download/v1.3.14/cmder.zip)
