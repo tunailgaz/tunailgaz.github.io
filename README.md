@@ -15,6 +15,7 @@
 # DevTools
 -   Cmder 
     -   [Download - cmder.zip latest windows](https://github.com/cmderdev/cmder/releases/download/v1.3.14/cmder.zip)
+    -   Create file under cmder/cmder_shell.bat  `@cmd.exe /k %0\..\vendor\init.bat`
     -   Cmder Aliases
     ````
         cd=cd /d $*
@@ -22,12 +23,12 @@
         title=cmd /c RenameTab "$*"
         gb=git branch $*
         nodex=node --experimental-modules $*
+        web=webstorm64.exe
         fransa-ssh=cmd /c RenameTab fransa-server $t ssh root@5.135.109.161
-        gs=git status
+        dsuf='docker service update --force'
         d=docker $*
         dex=docker exec -it $*
-        web=webstorm64.exe
-        projectsfolder=cd D:\Projects\
+        gs=git status
         grp=git rev-parse --abbrev-ref HEAD
         gcm=git commit -a
         gc=git checkout $*
@@ -35,6 +36,7 @@
     ````
 -   Webstorm
     -   `ide settings on cloud, sync with account`
+    -   `Settings/Tools/Terminal "[cmder-folder]\cmder_shell.bat"`
     -   [Download - Webstorm](https://www.jetbrains.com/webstorm/download/index.html#section=windows)
     -   Plugins
         ````
