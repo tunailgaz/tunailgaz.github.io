@@ -12,6 +12,21 @@
 - [ ]  create better solution cache busting 
 
 
+###### Dockerfile logging template
+````
+version: "3.7"
+x-default-opts:
+  &default-opts
+  logging:
+    options:
+      max-size: "1m"
+
+
+services:
+  chat:
+    <<: *default-opts
+````
+
 # DevTools
 -   Cmder 
     -   [Download - cmder.zip latest windows](https://github.com/cmderdev/cmder/releases/download/v1.3.14/cmder.zip)
