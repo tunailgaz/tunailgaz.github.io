@@ -41,6 +41,17 @@ services:
 }
 ````
 
+##### Windows 
+````
+/* Find task */
+tasklist | grep task
+/* kill task */
+taskkill /IM chrome.exe /F
+taskkill /PID 263544 /F
+
+
+````
+
 # DevTools
 -   Cmder 
     -   [Download - cmder.zip latest windows](https://github.com/cmderdev/cmder/releases/download/v1.3.14/cmder.zip)
