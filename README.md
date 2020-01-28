@@ -41,15 +41,13 @@ services:
 }
 ````
 
-##### Windows 
+###### Windows Commands 
 ````
 /* Find task */
 tasklist | grep task
 /* kill task */
 taskkill /IM chrome.exe /F
 taskkill /PID 263544 /F
-
-
 ````
 
 # DevTools
