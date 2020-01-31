@@ -12,6 +12,11 @@
 - [ ]  create better solution cache busting 
 
 
+###### npm
+````
+npm list -g --depth=0 | head -1
+````
+
 ###### Dockerfile logging template
 ````
 version: "3.7"
