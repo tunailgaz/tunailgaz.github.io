@@ -53,6 +53,8 @@ tasklist | grep task
 /* kill task */
 taskkill /IM chrome.exe /F
 taskkill /PID 263544 /F
+
+netstat -aon | find /i "listening" | grep 3306
 ````
 
 # DevTools
