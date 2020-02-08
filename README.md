@@ -12,6 +12,7 @@
 - [ ]  create better solution cache busting 
 
 
+
 ###### npm
 ````
 npm list -g --depth=0 | head -1
@@ -46,7 +47,7 @@ services:
 }
 ````
 
-###### Windows Commands 
+###### Windows 
 ````
 /* Find task */
 tasklist | grep task
@@ -56,6 +57,65 @@ taskkill /PID 263544 /F
 
 netstat -aon | find /i "listening" | grep 3306
 ````
+
+###### Linux
+````
+cat /etc/centos-release
+hostnamectl
+uname -a
+
+curl ifconfig.me 
+nmcli -p device show
+hostname -I | awk '{print $1}'
+
+chown ftpuser:ftpgroup package.json ? -R
+
+// firewall
+
+firewall-cmd --state
+firewall-cmd --get-active-zones
+firewall-cmd --zone=public --permanent --add-service=http
+firewall-cmd --zone=public --permanent --add-service=https
+firewall-cmd --zone=public --permanent --add-service=dns
+firewall-cmd --reload
+firewall-cmd --list-all
+
+dnf install 'dnf-command(config-manager)'
+
+// docker install
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+dnf install --nobest docker-ce 
+systemctl enable --now docker
+
+// docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o docker-compose
+mv docker-compose /usr/local/bin && sudo chmod +x /usr/local/bin/docker-compose
+
+//nodejs
+dnf module list nodejs
+dnf install nodejs
+
+// htop
+yum groupinstall "Development Tools"
+yum install ncurses ncurses-devel
+wget http://hisham.hm/htop/releases/2.0.2/htop-2.0.2.tar.gz
+tar xvfvz htop-2.0.2.tar.gz
+cd htop-2.0.2
+./configure
+make 
+make install
+
+docker run busybox nslookup registry.npmjs.org
+151.101.16.162 registry.npmjs.org
+
+ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"
+~/.ssh/authorized_keys
+echo 'test' >>  - appends
+echo 'test' > - overwrites
+
+````
+- [ ] ssh commands 
+- [ ] scp commands 
 
 # DevTools
 -   Cmder 
@@ -100,4 +160,40 @@ netstat -aon | find /i "listening" | grep 3306
     ```
         It has been tested on Navicat Premium 12.1.22
         And when i tested with 12.1.25 / 64-bit
-    ``` 
+    ```
+### Notable Links     
+##### Tools
+[nginx](https://www.digitalocean.com/community/tools/nginx)
+
+[centos6, certbot](https://certbot.eff.org/lets-encrypt/centos6-nginx.html)
+
+[nvm-windows](https://github.com/coreybutler/nvm-windows)
+
+[googles reCAPTHA](https://www.google.com/recaptcha/intro/v3.html)
+
+[intoDNS](https://intodns.com/)
+[dnsCHECKER](https://dnschecker.org/#A/tunailgaz.com)
+[icann lookup](https://lookup.icann.org/)
+
+[css generate colors](https://coolors.co/780116-f7b538-db7c26-d8572a-c32f27)
+[css color](https://color.adobe.com/create/color-wheel/)
+
+[image optimization](https://squoosh.app/)
+[image editor](https://pixlr.com/x/)
+
+#### Dev
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web)
+[rollup](https://rollupjs.org/guide/en/#importing)
+[you dont need jquery](http://youmightnotneedjquery.com/)
+[lazy loading image, video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
+[socket.io](https://socket.io/docs/emit-cheatsheet/)
+[css-flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[free images](https://pixabay.com/tr/)
+[github actions](https://www.bytesized.xyz/github-actions-tutorial)
+[learning git branch](https://learngitbranching.js.org/)
+
+
+##### check later
+[flowy css / js to create flows](https://github.com/alyssaxuu/flowy)
+
