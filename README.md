@@ -161,7 +161,11 @@ echo 'test' > - overwrites
         It has been tested on Navicat Premium 12.1.22
         And when i tested with 12.1.25 / 64-bit
     ```
+    
+    
 ### Notable Links     
+
+
 ##### Tools
 [nginx](https://www.digitalocean.com/community/tools/nginx)
 
