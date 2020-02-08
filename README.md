@@ -167,6 +167,7 @@ echo 'test' > - overwrites
 
 
 ##### Tools
+
 [nginx](https://www.digitalocean.com/community/tools/nginx)
 
 [centos6, certbot](https://certbot.eff.org/lets-encrypt/centos6-nginx.html)
@@ -176,28 +177,41 @@ echo 'test' > - overwrites
 [googles reCAPTHA](https://www.google.com/recaptcha/intro/v3.html)
 
 [intoDNS](https://intodns.com/)
+
 [dnsCHECKER](https://dnschecker.org/#A/tunailgaz.com)
+
 [icann lookup](https://lookup.icann.org/)
 
 [css generate colors](https://coolors.co/780116-f7b538-db7c26-d8572a-c32f27)
+
 [css color](https://color.adobe.com/create/color-wheel/)
 
 [image optimization](https://squoosh.app/)
+
 [image editor](https://pixlr.com/x/)
 
 #### Dev
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web)
+
 [rollup](https://rollupjs.org/guide/en/#importing)
+
 [you dont need jquery](http://youmightnotneedjquery.com/)
+
 [lazy loading image, video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
+
 [socket.io](https://socket.io/docs/emit-cheatsheet/)
+
 [css-flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 [free images](https://pixabay.com/tr/)
+
 [github actions](https://www.bytesized.xyz/github-actions-tutorial)
+
 [learning git branch](https://learngitbranching.js.org/)
 
 
 ##### check later
+
 [flowy css / js to create flows](https://github.com/alyssaxuu/flowy)
 
