@@ -114,8 +114,41 @@ echo 'test' >>  - appends
 echo 'test' > - overwrites
 
 ````
-- [ ] ssh commands 
-- [ ] scp commands 
+
+#### Git
+
+````
+git branch -a
+git branch -d dev
+# --delete --force
+git branch -D 
+
+# Rebase example
+git checkout feature
+git checkout -b temp
+git rebase -i master
+
+# Above will drop you in an editor and pick the changes you want ala:
+pick 7266df7 First change
+pick 1b3f7df Another change
+pick 5bbf56f Last change
+
+# Rebase b44c147..5bbf56f onto b44c147
+#
+# Commands:
+# pick = use commit
+# edit = use commit, but stop for amending
+# squash = use commit, but meld into previous commit
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted.
+#
+
+git checkout master
+git pull . temp
+git branch -d temp
+
+````
 
 # DevTools
 -   Cmder 
