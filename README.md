@@ -60,6 +60,9 @@ netstat -aon | find /i "listening" | grep 3306
 
 ###### Linux
 ````
+show current logged in users 
+w | who
+
 cat /etc/centos-release
 hostnamectl
 uname -a
