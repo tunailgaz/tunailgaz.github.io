@@ -16,6 +16,15 @@
 ###### npm
 ````
 npm list -g --depth=0 | head -1
+npm outdated
+npm update
+
+ncu --upgrade sharp
+npm install
+
+ncu --upgradeAll
+npm install
+
 ````
 
 ###### Dockerfile logging template
