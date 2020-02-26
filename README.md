@@ -130,6 +130,18 @@ echo 'test' > - overwrites
 #### Git
 
 ````
+
+ git clone -b branchx https://tunailgaz@github.com/tunailgaz/xx 
+
+# delete local tag '12345'
+git tag -d 12345
+# delete remote tag '12345' (eg, GitHub version too)
+git push origin :refs/tags/12345
+# alternative approach
+git push --delete origin tagName
+git tag -d tagName
+
+
 git branch -a
 git branch -d dev
 # --delete --force
