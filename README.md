@@ -11,9 +11,9 @@
 - [ ]  create npm packages for download, save sharp/mkdirp  (big small images)
 - [ ]  create better solution cache busting 
 
-[libs](https://github.com/tunailgaz/tunailgaz.github.io/tree/master/libs)
-[time-display](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-display.js)
-[time-format](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-format.js)
+[libs](https://github.com/tunailgaz/tunailgaz.github.io/tree/master/libs) <br>
+[time-display](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-display.js) <br>
+[time-format](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-format.js) <br>
 [utils](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/utils.js)
 
 ###### npm
