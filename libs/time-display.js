@@ -1,6 +1,10 @@
 if (document.querySelector('time-display')) {
     customElements.define('time-display', TimeDisplay);
 }
+// expects Date.now()
+
+// <time-display> new Date().now().toDateString() </time-display>
+
 
 export class TimeDisplay extends HTMLElement {
     constructor () {

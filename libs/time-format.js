@@ -1,6 +1,7 @@
 if (document.querySelector('time-format')) {
     customElements.define('time-format', TimeFormat);
 }
+// <time-format> new Date().now() </time-format>
 
 export class TimeFormat extends HTMLElement {
     constructor () {
