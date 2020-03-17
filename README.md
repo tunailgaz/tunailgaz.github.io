@@ -6,12 +6,12 @@
 
 - [X]  Resources
 - [X]  Cloud development settings/environments and tools
-- [ ]  [The Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-- [ ]  Intl.RelativeTimeFormat
+- [X]  [The Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- [X]  Intl.RelativeTimeFormat 
 - [ ]  create npm packages for download, save sharp/mkdirp  (big small images)
 - [ ]  create better solution cache busting 
 
-
+[libs](https://github.com/tunailgaz/tunailgaz.github.io/libs)
 
 ###### npm
 ````
