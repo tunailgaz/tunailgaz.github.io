@@ -15,6 +15,7 @@
 [time-display](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-display.js) <br>
 [time-format](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-format.js) <br>
 [utils](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/utils.js)
+[animated css](https://github.com/daneden/animate.css)
 
 ###### npm
 ````
