@@ -14,22 +14,9 @@
 [libs](https://github.com/tunailgaz/tunailgaz.github.io/tree/master/libs) <br>
 [time-display](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-display.js) <br>
 [time-format](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-format.js) <br>
-[utils](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/utils.js)
-[animated css](https://github.com/daneden/animate.css)
+[utils](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/utils.js)<br>
+[animated css](https://github.com/daneden/animate.css)<br>
 
-###### npm
-````
-npm list -g --depth=0 | head -1
-npm outdated
-npm update
-
-ncu --upgrade sharp
-npm install
-
-ncu --upgradeAll
-npm install
-
-````
 
 ###### Dockerfile logging template
 ````
@@ -58,77 +45,6 @@ services:
     "no-console" : "error",
     "camelcase" : "off"
 }
-````
-
-###### Windows 
-````
-/* Find task */
-tasklist | grep task
-/* kill task */
-taskkill /IM chrome.exe /F
-taskkill /PID 263544 /F
-
-netstat -aon | find /i "listening" | grep 3306
-````
-
-###### Linux
-````
-show current logged in users 
-w | who
-
-cat /etc/centos-release
-hostnamectl
-uname -a
-
-curl ifconfig.me 
-nmcli -p device show
-hostname -I | awk '{print $1}'
-
-chown ftpuser:ftpgroup package.json ? -R
-
-// firewall
-
-firewall-cmd --state
-firewall-cmd --get-active-zones
-firewall-cmd --zone=public --permanent --add-service=http
-firewall-cmd --zone=public --permanent --add-service=https
-firewall-cmd --zone=public --permanent --add-service=dns
-firewall-cmd --reload
-firewall-cmd --list-all
-
-dnf install 'dnf-command(config-manager)'
-
-// docker install
-dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
-dnf install --nobest docker-ce 
-systemctl enable --now docker
-
-// docker-compose
-curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o docker-compose
-mv docker-compose /usr/local/bin && sudo chmod +x /usr/local/bin/docker-compose
-
-//nodejs
-dnf module list nodejs
-dnf install nodejs
-
-// htop
-yum groupinstall "Development Tools"
-yum install ncurses ncurses-devel
-wget http://hisham.hm/htop/releases/2.2.0/htop-2.2.0.tar.gz
-tar xvfvz htop-2.2.0.tar.gz
-cd htop-2.2.0
-./configure
-make 
-make install
-
-docker run busybox nslookup registry.npmjs.org
-151.101.16.162 registry.npmjs.org
-
-ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"
-~/.ssh/authorized_keys
-echo 'test' >>  - appends
-echo 'test' > - overwrites
-
 ````
 
 #### Git
@@ -235,7 +151,92 @@ git branch -d temp
         It has been tested on Navicat Premium 12.1.22
         And when i tested with 12.1.25 / 64-bit
     ```
-    
+
+
+###### Linux
+````
+show current logged in users 
+w | who
+
+cat /etc/centos-release
+hostnamectl
+uname -a
+
+curl ifconfig.me 
+nmcli -p device show
+hostname -I | awk '{print $1}'
+
+chown ftpuser:ftpgroup package.json ? -R
+
+// firewall
+
+firewall-cmd --state
+firewall-cmd --get-active-zones
+firewall-cmd --zone=public --permanent --add-service=http
+firewall-cmd --zone=public --permanent --add-service=https
+firewall-cmd --zone=public --permanent --add-service=dns
+firewall-cmd --reload
+firewall-cmd --list-all
+
+dnf install 'dnf-command(config-manager)'
+
+// docker install
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+dnf install --nobest docker-ce 
+systemctl enable --now docker
+
+// docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o docker-compose
+mv docker-compose /usr/local/bin && sudo chmod +x /usr/local/bin/docker-compose
+
+//nodejs
+dnf module list nodejs
+dnf install nodejs
+
+// htop
+yum groupinstall "Development Tools"
+yum install ncurses ncurses-devel
+wget http://hisham.hm/htop/releases/2.2.0/htop-2.2.0.tar.gz
+tar xvfvz htop-2.2.0.tar.gz
+cd htop-2.2.0
+./configure
+make 
+make install
+
+docker run busybox nslookup registry.npmjs.org
+151.101.16.162 registry.npmjs.org
+
+ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"
+~/.ssh/authorized_keys
+echo 'test' >>  - appends
+echo 'test' > - overwrites
+
+````
+
+###### npm
+````
+npm list -g --depth=0 | head -1
+npm outdated
+npm update
+
+ncu --upgrade sharp
+npm install
+
+ncu --upgradeAll
+npm install
+
+````
+
+###### Windows 
+````
+/* Find task */
+tasklist | grep task
+/* kill task */
+taskkill /IM chrome.exe /F
+taskkill /PID 263544 /F
+
+netstat -aon | find /i "listening" | grep 3306
+````
     
 ### Notable Links     
 
