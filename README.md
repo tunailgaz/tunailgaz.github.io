@@ -192,18 +192,24 @@ git branch -d temp
         cd=cd /d $*
         aliases=doskey /macros
         title=cmd /c RenameTab "$*"
-        gb=git branch $*
         nodex=node --experimental-modules $*
         web=webstorm64.exe
         fransa-ssh=cmd /c RenameTab fransa-server $t ssh root@5.135.109.161
-        dsuf='docker service update --force'
         d=docker $*
         dex=docker exec -it $*
+        dsuf=docker service update --force
+        dc=docker-compose $*
         gs=git status
+        gb=git branch $*
         grp=git rev-parse --abbrev-ref HEAD
         gcm=git commit -a
         gc=git checkout $*
         gl=git log --oneline $*
+        ga=git add .
+        gcb=git checkout -b $*
+        gco=git checkout $*
+
+
     ````
 -   Webstorm
     -   `ide settings on cloud, sync with account`
