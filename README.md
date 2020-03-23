@@ -104,29 +104,28 @@ git branch -d temp
     -   Accept arguments  `@cmd /k "%CMDER_ROOT%\vendor\init.bat && %~1"`
     -   Usage %CMDER_ROOT%\cmder_shell.bat "npx flow"
     -   Cmder Aliases
-    ````
-        cd=cd /d $*
-        aliases=doskey /macros
-        title=cmd /c RenameTab "$*"
-        nodex=node --experimental-modules $*
-        web=webstorm64.exe
-        fransa-ssh=cmd /c RenameTab fransa-server $t ssh root@5.135.109.161
-        d=docker $*
-        dex=docker exec -it $*
-        dsuf=docker service update --force
-        dc=docker-compose $*
-        gs=git status
-        gb=git branch $*
-        grp=git rev-parse --abbrev-ref HEAD
-        gcm=git commit -a
-        gc=git checkout $*
-        gl=git log --oneline $*
-        ga=git add .
-        gcb=git checkout -b $*
-        gco=git checkout $*
-
-
-    ````
+````
+    cd=cd /d $*
+    aliases=doskey /macros
+    title=cmd /c RenameTab "$*"
+    nodex=node --experimental-modules $*
+    web=webstorm64.exe
+    fransa-ssh=cmd /c RenameTab fransa-server $t ssh root@5.135.109.161
+    d=docker $*
+    dex=docker exec -it $*
+    dsuf=docker service update --force
+    dc=docker-compose $*
+    gs=git status
+    gb=git branch $*
+    grp=git rev-parse --abbrev-ref HEAD
+    gcm=git commit -a
+    gc=git checkout $*
+    gl=git log --oneline $*
+    ga=git add .
+    gcb=git checkout -b $*
+    gco=git checkout $*
+````
+    
 -   Webstorm
     -   `ide settings on cloud, sync with account`
     -   `Settings/Tools/Terminal "[cmder-folder]\cmder_shell.bat"`
@@ -134,23 +133,22 @@ git branch -d temp
     -   `"cmd.exe" /k ""%CMDER_ROOT%\vendor\init.bat""` -> package.json -> scripts ->  `"dev-flow": "%CMDER_ROOT%\\cmder_shell.bat \"npx flow\""`
     -   [Download - Webstorm](https://www.jetbrains.com/webstorm/download/index.html#section=windows)
     -   Plugins
-        ````
-        AceJump             https://plugins.jetbrains.com/plugin/7086-acejump/
-        BrowseWordAtCaret   https://plugins.jetbrains.com/plugin/201-browsewordatcaret/
-        ESLint              https://plugins.jetbrains.com/plugin/7494-eslint/
-        Grazie              https://plugins.jetbrains.com/plugin/12175-grazie/
-        Tab Shifter         https://plugins.jetbrains.com/plugin/7475-tab-shifter/
-        Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
-        ````
+````
+AceJump             https://plugins.jetbrains.com/plugin/7086-acejump/
+BrowseWordAtCaret   https://plugins.jetbrains.com/plugin/201-browsewordatcaret/
+ESLint              https://plugins.jetbrains.com/plugin/7494-eslint/
+Grazie              https://plugins.jetbrains.com/plugin/12175-grazie/
+Tab Shifter         https://plugins.jetbrains.com/plugin/7475-tab-shifter/
+Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
+````
     
 -   Navicat 12 Premium
     -   [Download Navicat 12.1 Premium](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat121_premium_en_x64.rar)
     -   [Download Navicat kg project src](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat-kg.zip) 
     -   [Download Navicat kgs](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat-kg-for-x64.zip) 
-    ```
-        It has been tested on Navicat Premium 12.1.22
-        And when i tested with 12.1.25 / 64-bit
-    ```
+`   It has been tested on Navicat Premium 12.1.22
+    And when i tested with 12.1.25 / 64-bit
+`
 
 
 ###### Linux
