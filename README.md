@@ -185,6 +185,8 @@ git branch -d temp
 -   Cmder 
     -   [Download - cmder.zip latest windows](https://github.com/cmderdev/cmder/releases/download/v1.3.14/cmder.zip)
     -   Create file under cmder/cmder_shell.bat  `@cmd.exe /k %0\..\vendor\init.bat`
+    -   Accept arguments  `@cmd /k "%CMDER_ROOT%\vendor\init.bat && %~1"`
+    -   Usage %CMDER_ROOT%\cmder_shell.bat "npx flow"
     -   Cmder Aliases
     ````
         cd=cd /d $*
@@ -206,6 +208,8 @@ git branch -d temp
 -   Webstorm
     -   `ide settings on cloud, sync with account`
     -   `Settings/Tools/Terminal "[cmder-folder]\cmder_shell.bat"`
+    or
+    -   `"cmd.exe" /k ""%CMDER_ROOT%\vendor\init.bat""` -> package.json -> scripts ->  `"dev-flow": "%CMDER_ROOT%\\cmder_shell.bat \"npx flow\""`
     -   [Download - Webstorm](https://www.jetbrains.com/webstorm/download/index.html#section=windows)
     -   Plugins
         ````
