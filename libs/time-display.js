@@ -1,7 +1,7 @@
 if (document.querySelector('time-display')) {
     customElements.define('time-display', TimeDisplay);
 }
-// expects Date.now()
+// expects new Date(Date.now()).toUTCString()
 
 // <time-display> new Date().now().toDateString() </time-display>
 
