@@ -146,6 +146,9 @@ git push --delete origin tagName
 git tag -d tagName
 
 
+git checkout v1.0.1
+git checkout -
+
 git branch -a
 git branch -d dev
 # --delete --force
