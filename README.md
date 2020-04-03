@@ -212,6 +212,8 @@ echo 'test' > - overwrites
 
 ###### npm
 ````
+npm --no-git-tag-version version patch
+
 npm list -g --depth=0 | head -1
 npm outdated
 npm update
