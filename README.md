@@ -155,6 +155,11 @@ Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
 show current logged in users 
 w | who
 
+# Text-based disk usage viewer
+dnf install ncdu
+ncdu /home/html
+
+
 cat /etc/centos-release
 hostnamectl
 uname -a
