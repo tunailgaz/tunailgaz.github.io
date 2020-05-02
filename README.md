@@ -245,6 +245,20 @@ npm install
 
 ````
 
+
+##### mariadb
+
+```
+full text search
+https://mariadb.com/kb/en/full-text-index-overview/
+ignored keywords
+https://mariadb.com/kb/en/full-text-index-stopwords/#innodb-stopwords
+disabling this feature
+https://mariadb.com/kb/en/innodb-system-variables/#innodb_ft_server_stopword_table
+
+```
+
+
 ###### Windows 
 ````
 /* Find task */
