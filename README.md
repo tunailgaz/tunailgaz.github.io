@@ -16,6 +16,7 @@
 [utils](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/utils.js)<br>
 [animated css](https://github.com/daneden/animate.css)<br>
 
+// String(Array.from({ length: 25 }).fill('a').join(''));
 
 ###### Dockerfile logging template
 ````
