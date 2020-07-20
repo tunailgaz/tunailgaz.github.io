@@ -19,7 +19,7 @@
 // String(Array.from({ length: 25 }).fill('a').join(''));
 
 ###### Dockerfile logging template
-````
+```Dockerfile
 version: "3.7"
 x-default-opts:
   &default-opts
@@ -27,14 +27,13 @@ x-default-opts:
     options:
       max-size: "1m"
 
-
 services:
   chat:
     <<: *default-opts
-````
+```
 
 ###### ESLint Custom Rules
-````
+```json
 "rules": {
     "indent": ["error", 4],
     "semi": ["error", "always"],
@@ -45,11 +44,11 @@ services:
     "no-console" : "error",
     "camelcase" : "off"
 }
-````
+```
 
 #### Git
 
-````
+```bash
 
  git clone -b branchx https://tunailgaz@github.com/tunailgaz/xx 
 
@@ -95,7 +94,7 @@ git checkout master
 git pull . temp
 git branch -d temp
 
-````
+```
 
 # DevTools
 -   Cmder 
@@ -104,7 +103,7 @@ git branch -d temp
     -   Accept arguments  `@cmd /k "%CMDER_ROOT%\vendor\init.bat && %~1"`
     -   Usage %CMDER_ROOT%\cmder_shell.bat "npx flow"
     -   Cmder Aliases
-````
+```text
     cd=cd /d $*
     aliases=doskey /macros
     title=cmd /c RenameTab "$*"
@@ -124,7 +123,7 @@ git branch -d temp
     ga=git add .
     gcb=git checkout -b $*
     gco=git checkout $*
-````
+```
     
 -   Webstorm
     -   `ide settings on cloud, sync with account`
@@ -133,14 +132,14 @@ git branch -d temp
     -   `"cmd.exe" /k ""%CMDER_ROOT%\vendor\init.bat""` -> package.json -> scripts ->  `"dev-flow": "%CMDER_ROOT%\\cmder_shell.bat \"npx flow\""`
     -   [Download - Webstorm](https://www.jetbrains.com/webstorm/download/index.html#section=windows)
     -   Plugins
-````
+```text
 AceJump             https://plugins.jetbrains.com/plugin/7086-acejump/
 BrowseWordAtCaret   https://plugins.jetbrains.com/plugin/201-browsewordatcaret/
 ESLint              https://plugins.jetbrains.com/plugin/7494-eslint/
 Grazie              https://plugins.jetbrains.com/plugin/12175-grazie/
 Tab Shifter         https://plugins.jetbrains.com/plugin/7475-tab-shifter/
 Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
-````
+```
     
 -   Navicat 12 Premium
     -   [Download Navicat 12.1 Premium](https://github.com/tunailgaz/tunailgaz.github.io/raw/master/navicat/navicat121_premium_en_x64.rar)
@@ -152,8 +151,8 @@ Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
 
 
 ###### Linux
-````
-show current logged in users 
+```bash
+#show current logged in users 
 w | who
 
 # Text-based disk usage viewer
@@ -179,13 +178,13 @@ bash watch_docker.sh > /tmp/tmp.lyvyDOmbNu 2>&1 &
 pkill -f watch_docker.sh
 
 cat watch_docker.sh
-````
+```
 
 [watch_docker.sh](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/watch_docker.sh)
 
-````
+```bash
 
-// firewall
+#firewall
 
 firewall-cmd --state
 firewall-cmd --get-active-zones
@@ -228,7 +227,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"
 echo 'test' >>  - appends
 echo 'test' > - overwrites
 
-````
+```
 
 ##### backup
 
@@ -264,7 +263,7 @@ docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" rm -rf /tmp/
 ```
 
 ###### npm
-````
+```text
 npm --no-git-tag-version version patch
 
 npm list -g --depth=0 | head -1
@@ -276,25 +275,23 @@ npm install
 
 ncu --upgradeAll
 npm install
-
-````
+```
 
 
 ##### mariadb
 
-```
+```text
 full text search
 https://mariadb.com/kb/en/full-text-index-overview/
 ignored keywords
 https://mariadb.com/kb/en/full-text-index-stopwords/#innodb-stopwords
 disabling this feature
 https://mariadb.com/kb/en/innodb-system-variables/#innodb_ft_server_stopword_table
-
 ```
 
 
 ###### Windows 
-````
+```powershell
 /* Find task */
 tasklist | grep task
 /* kill task */
@@ -302,7 +299,7 @@ taskkill /IM chrome.exe /F
 taskkill /PID 263544 /F
 
 netstat -aon | find /i "listening" | grep 3306
-````
+```
     
 ### Notable Links     
 
