@@ -230,6 +230,42 @@ echo 'test' > - overwrites
 
 ````
 
+##### backup
+
+```
+
+#!/usr/bin/env bash
+
+echo 'RUNNING mysqldump schema app'
+docker exec "$(docker ps -f name=app_mysql --format '{{.ID}}')" mysqldump  -d --user='username' --password='password' dbname > /home/backups/app_backup/app_schema.sql
+echo 'RUNNING mysqldump schema data'
+docker exec "$(docker ps -f name=app_mysql --format '{{.ID}}')" mysqldump  --user='username' --password='password' dbname > /home/backups/app_backup/app_backup.sql
+
+echo 'RUNNING tar '
+tar -czvf /home/backups/app_backup/appdata_daily.tar.gz /var/lib/docker/volumes/app_data
+
+echo 'RUNNING rsync daily'
+rsync -av /home/backups/app_backup user@x.x.x.x:/home/app_backups/daily/
+
+```
+
+##### restore
+
+```
+#!/usr/bin/env bash
+#do that manually
+#copy file to container
+docker cp /home/backups/app_mysql/app_backup.sql "$(docker ps -f name=app_mysql --format '{{.ID}}')":/tmp/backup.sql
+#add pv
+docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" apt-get update
+docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" apt-get install pv
+# < backup.sql
+docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" pv /tmp/backup.sql | mysql --user=username --password=password dbname
+# cleanup
+docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" rm -rf /tmp/backup.sql
+
+```
+
 ###### npm
 ````
 npm --no-git-tag-version version patch
