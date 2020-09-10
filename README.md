@@ -151,6 +151,96 @@ Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
 
 
 ###### Linux
+
+### .bash_profile
+```text
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+if [ -f ~/.docker_aliases ]; then
+        . ~/.docker_aliases
+fi
+
+if [ -f ~/.git_aliases ]; then
+        . ~/.git_aliases
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+```
+
+### .bashrc
+```text
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias vi='vim'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+```
+
+
+### .docker_aliases
+```text
+# .bashrc                                                                                                          
+                                                                                                                   
+# User specific aliases and functions                                                                              
+                                                                                                                   
+alias d='docker'                                                                                                   
+alias dps='docker ps'                                                                                              
+alias dpsa='docker ps -a'                                                                                          
+alias di='docker inspect'                                                                                          
+alias dl='docker logs'                                                                                             
+alias dlf='docker logs -f'                                                                                         
+alias dex='docker exec -it'                                                                                        
+                                                                                                                   
+alias dvls='docker volume ls'                                                                                      
+alias dvi='docker volume inspect'                                                                                  
+                                                                                                                   
+alias dnls='docker network ls'                                                                                     
+alias dni='docker network inspect'                                                                                 
+                                                                                                                   
+alias dc='docker-compose'                                                                                          
+                                                                                                                   
+alias dstats='docker stats'                                                                                        
+                                                                                                                   
+alias ds='docker service'                                                                                          
+alias dsls='docker service ls'                                                                                     
+                                                                                                                   
+alias dsl='docker service logs'                                                                                    
+alias dslf='docker service logs -f'                                                                                
+                                                                                                                   
+                                                                                                                   
+                                                                                                                   
+alias dsu='docker service update'                                                                                  
+alias dsuf='docker service update --force'                                                                         
+                                                                                                                   
+                                                                                                                   
+alias dstats='docker stats --format "table {{.Name}}\t {{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}"'                 
+                                                                                                                   
+alias dkps="docker ps --format 'table {{.ID}}\t{{.Status}}\t{{.Image}}\t{{.Names}}'"                               
+                                                                                                                   
+dfind () {                                                                                                         
+  docker ps -f name=$1 --format 'table {{.ID}}\t{{.Status}}\t{{.Image}}\t{{.Names}}'                               
+}                                                                                                                  
+```
+
+
+
 ```bash
 #show current logged in users 
 w | who
