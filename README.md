@@ -153,7 +153,7 @@ Wrap to Column      https://plugins.jetbrains.com/plugin/7234-wrap-to-column/
 ###### Linux
 
 ### .bash_profile
-```bash
+```
 # .bash_profile
 
 # Get the aliases and functions
@@ -177,7 +177,7 @@ export PATH
 ```
 
 ### .bashrc
-```bash
+```
 # .bashrc
 
 # User specific aliases and functions
@@ -195,7 +195,7 @@ fi
 
 
 ### .docker_aliases
-```bash
+```
 # .bashrc                                                                                                          
                                                                                                                    
 # User specific aliases and functions                                                                              
@@ -241,7 +241,7 @@ dfind () {
 
 
 
-```bash
+```
 #show current logged in users 
 w | who
 
@@ -272,7 +272,7 @@ cat watch_docker.sh
 
 [watch_docker.sh](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/watch_docker.sh)
 
-```bash
+```
 
 #firewall
 
@@ -321,7 +321,7 @@ echo 'test' > - overwrites
 
 ##### backup
 
-```bash
+```
 #!/usr/bin/env bash
 
 echo 'RUNNING mysqldump schema app'
@@ -338,7 +338,7 @@ rsync -av /home/backups/app_backup user@x.x.x.x:/home/app_backups/daily/
 
 ##### restore
 
-```bash
+```
 #!/usr/bin/env bash
 #do that manually
 #copy file to container
