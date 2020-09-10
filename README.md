@@ -325,7 +325,7 @@ echo 'test' > - overwrites
 #!/usr/bin/env bash
 
 echo 'RUNNING mysqldump schema app'
-docker exec "$(docker ps -f name=app_mysql --format '\{\{\.ID}}')" mysqldump  -d --user='username' --password='password' dbname > /home/backups/app_backup/app_schema.sql
+docker exec "$(docker ps -f name=app_mysql --format '\\{{.ID}}')" mysqldump  -d --user='username' --password='password' dbname > /home/backups/app_backup/app_schema.sql
 echo 'RUNNING mysqldump schema data'
 docker exec "$(docker ps -f name=app_mysql --format '\{\{.ID\}\}')" mysqldump  --user='username' --password='password' dbname > /home/backups/app_backup/app_backup.sql
 
