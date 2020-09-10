@@ -195,7 +195,7 @@ fi
 
 
 ### .docker_aliases
-```text
+```shell script
 # .bashrc                                                                                                          
                                                                                                                    
 # User specific aliases and functions                                                                              
@@ -241,7 +241,7 @@ dfind () {
 
 
 
-```bash
+```shell script
 #show current logged in users 
 w | who
 
@@ -272,7 +272,7 @@ cat watch_docker.sh
 
 [watch_docker.sh](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/watch_docker.sh)
 
-```bash
+```shell script
 
 #firewall
 
