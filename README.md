@@ -344,12 +344,12 @@ rsync -av /home/backups/app_backup user@x.x.x.x:/home/app_backups/daily/
 #copy file to container
 docker cp /home/backups/app_mysql/app_backup.sql "$(docker ps -f name=app_mysql --format '{{.ID}}')":/tmp/backup.sql
 #add pv
-docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" apt-get update
-docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" apt-get install pv
+docker exec -it "$(docker ps -f name=app_mysql --format \'\{\{.ID\}\}\')" apt-get update
+docker exec -it "$(docker ps -f name=app_mysql --format \'\{\{.ID\}\}\')" apt-get install pv
 # < backup.sql
-docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" pv /tmp/backup.sql | mysql --user=username --password=password dbname
+docker exec -it "$(docker ps -f name=app_mysql --format \'\{\{.ID\}\}\')" pv /tmp/backup.sql | mysql --user=username --password=password dbname
 # cleanup
-docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" rm -rf /tmp/backup.sql
+docker exec -it "$(docker ps -f name=app_mysql --format \'\{\{.ID\}\}\')" rm -rf /tmp/backup.sql
 ```
 
 ###### npm
