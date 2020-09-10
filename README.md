@@ -338,7 +338,7 @@ rsync -av /home/backups/app_backup user@x.x.x.x:/home/app_backups/daily/
 
 ##### restore
 
-``
+```
 #!/usr/bin/env bash
 #do that manually
 #copy file to container
@@ -350,7 +350,7 @@ docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" apt-get inst
 docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" pv /tmp/backup.sql | mysql --user=username --password=password dbname
 # cleanup
 docker exec -it "$(docker ps -f name=app_mysql --format '{{.ID}}')" rm -rf /tmp/backup.sql
-``
+```
 
 ###### npm
 ```text
