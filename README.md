@@ -321,11 +321,11 @@ echo 'test' > - overwrites
 
 ##### backup
 
-```bash
+```shell script
 #!/usr/bin/env bash
 
 echo 'RUNNING mysqldump schema app'
-docker exec "$(docker ps -f name=app_mysql --format '\{{.ID}}')" mysqldump  -d --user='username' --password='password' dbname > /home/backups/app_backup/app_schema.sql
+docker exec "$(docker ps -f name=app_mysql --format '{{.ID}}')" mysqldump  -d --user='username' --password='password' dbname > /home/backups/app_backup/app_schema.sql
 echo 'RUNNING mysqldump schema data'
 docker exec "$(docker ps -f name=app_mysql --format '{{.ID}}')" mysqldump  --user='username' --password='password' dbname > /home/backups/app_backup/app_backup.sql
 
@@ -338,7 +338,7 @@ rsync -av /home/backups/app_backup user@x.x.x.x:/home/app_backups/daily/
 
 ##### restore
 
-```
+```shell script
 #!/usr/bin/env bash
 #do that manually
 #copy file to container
