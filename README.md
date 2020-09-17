@@ -274,6 +274,8 @@ cat watch_docker.sh
 
 ```bash
 
+watch 'ps aux | grep chrom | wc -w'
+
 #firewall
 
 firewall-cmd --state
