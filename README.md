@@ -47,16 +47,13 @@ services:
 ```
 
 #### Git
+
+[How to update repo's EOL with git](https://docs.github.com/en/github/using-git/configuring-git-to-handle-line-endings)
+
 ```text
 [core]
     autocrlf = true
     eol = lf
-	repositoryformatversion = 0
-	filemode = false
-	bare = false
-	logallrefupdates = true
-	symlinks = false
-	ignorecase = true
 ```
 
 
