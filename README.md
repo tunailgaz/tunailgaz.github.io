@@ -47,6 +47,18 @@ services:
 ```
 
 #### Git
+```text
+[core]
+    autocrlf = true
+    eol = lf
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+```
+
 
 ```bash
 
