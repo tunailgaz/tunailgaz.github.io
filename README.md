@@ -106,6 +106,35 @@ git branch -d temp
 ```
 
 # DevTools
+
+### vscode settings.json
+```JavaScript
+{
+    "terminal.integrated.shell.windows": "D:\\setups\\cmder\\cmder_shell.bat",
+    "terminal.external.windowsExec": "C:\\Users\\tunai\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "workbench.settings.editor": "ui",
+    "window.zoomLevel": 0,
+    "editor.showFoldingControls": "always",
+    "editor.folding": true,
+    "editor.foldingStrategy": "indentation", 
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.eol": "\n",
+    "editor.wordWrapColumn": 100,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+}
+
+```
+
 -   Cmder 
     -   [Download - cmder.zip latest windows](https://github.com/cmderdev/cmder/releases/download/v1.3.14/cmder.zip)
     -   Create file under cmder/cmder_shell.bat  `@cmd.exe /k %0\..\vendor\init.bat`
@@ -454,3 +483,254 @@ netstat -aon | find /i "listening" | grep 3306
 
 [flowy css / js to create flows](https://github.com/alyssaxuu/flowy)
 
+
+
+##### vscode keybindings
+
+```JavaScript
+
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+s",
+        "command": "todo.toggleStart",
+        "when": "editorTextFocus && editorLangId == 'todo'"
+    },
+    {
+        "key": "alt+s",
+        "command": "-todo.toggleStart",
+        "when": "editorTextFocus && editorLangId == 'todo'"
+    },
+    {
+        "key": "alt+e",
+        "command": "todo.toggleDone",
+        "when": "editorTextFocus && editorLangId == 'todo'"
+    },
+    {
+        "key": "alt+d",
+        "command": "-todo.toggleDone",
+        "when": "editorTextFocus && editorLangId == 'todo'"
+    },
+    {
+        "key": "alt+q",
+        "command": "extension.aceJump"
+    },
+    {
+        "key": "ctrl+numpad_add",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "-editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+numpad_add",
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "-editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "-workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+      "key": "ctrl+shift+numpad_add",
+      "command": "editor.unfoldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+j",
+      "command": "-editor.unfoldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+shift+numpad_subtract",
+      "command": "editor.foldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+0",
+      "command": "-editor.foldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+4",
+      "command": "workbench.action.closeWindow"
+    },
+    {
+      "key": "ctrl+shift+w",
+      "command": "-workbench.action.closeWindow"
+    },
+    {
+      "key": "ctrl+f4",
+      "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+      "key": "ctrl+down",
+      "command": "spaceBlockJumper.moveDown"
+    },
+    {
+      "key": "ctrl+up",
+      "command": "spaceBlockJumper.moveUp"
+    },
+    {
+      "key": "ctrl+shift+down",
+      "command": "spaceBlockJumper.selectDown"
+    },
+    {
+      "key": "ctrl+shift+up",
+      "command": "spaceBlockJumper.selectUp"
+    },
+    {
+      "key": "ctrl+3",
+      "command": "workbench.action.closeGroup",
+      "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+      "key": "ctrl+f4",
+      "command": "-workbench.action.closeGroup",
+      "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+      "key": "ctrl+b",
+      "command": "editor.action.revealDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+      "key": "f12",
+      "command": "-editor.action.revealDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+      "key": "ctrl+shift+b",
+      "command": "editor.action.peekDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+      "key": "alt+f12",
+      "command": "-editor.action.peekDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+      "key": "f12",
+      "command": "editor.action.revealDefinitionAside",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+      "key": "ctrl+k f12",
+      "command": "-editor.action.revealDefinitionAside",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+      "key": "ctrl+w",
+      "command": "editor.action.smartSelect.expand",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "shift+alt+right",
+      "command": "-editor.action.smartSelect.expand",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+w",
+      "command": "editor.action.smartSelect.shrink",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "shift+alt+left",
+      "command": "-editor.action.smartSelect.shrink",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "workbench.action.terminal.openNativeConsole",
+      "when": "!terminalFocus"
+    },
+    {
+      "key": "ctrl+shift+c",
+      "command": "-workbench.action.terminal.openNativeConsole",
+      "when": "!terminalFocus"
+    },
+    {
+      "key": "alt+q",
+      "command": "extension.aceJump.multiChar"
+    },
+
+    {
+      "key": "ctrl+numpad0",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": {
+        "text": "set NODE_ENV=development && npx mocha --exit --timeout 0 ${relativeFile}\u000D"
+      }
+    },
+    {
+      "key": "alt+numpad0",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": {
+        "text": "set NODE_ENV=development && npm run test\u000D"
+      }
+    }
+]
+
+```
