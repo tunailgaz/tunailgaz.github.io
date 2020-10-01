@@ -131,7 +131,10 @@ git branch -d temp
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
-    "window.title": "${rootName}"
+    "window.title": "${rootName}",
+    "licenser.author": "Tuna Ilgaz",
+    "licenser.useSingleLineStyle": false,
+    "licenser.license": "GPLv3" // "WTFPL": Do What The Fuck You Want To Public License
 }
 
 ```
