@@ -108,6 +108,19 @@ git branch -d temp
 # DevTools
 
 ### vscode settings.json
+```text
+extensions:
+- [ ] Code Ace Jumper 3.3.2
+- [ ] ESLint 2.1.8
+- [ ] Space Block Jumper 1.2.2
+- [ ] Todo+ 4.18.0
+- [ ] Git Graph 1.26.0
+- [ ] licenser 1.5.0
+- [ ] Remote - WSL 0.44.5
+- [ ] Windows Terminal Integration 0.6.0
+- [ ] npm 0.3.13
+```
+
 ```JavaScript
 {
     "terminal.integrated.shell.windows": "D:\\setups\\cmder\\cmder_shell.bat",
