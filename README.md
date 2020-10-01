@@ -147,7 +147,9 @@ extensions:
     "window.title": "${rootName}",
     "licenser.author": "Tuna Ilgaz",
     "licenser.useSingleLineStyle": false,
-    "licenser.license": "GPLv3" // "WTFPL": Do What The Fuck You Want To Public License
+    "licenser.license": "GPLv3",
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top"
 }
 
 ```
