@@ -4,12 +4,11 @@
 
 ### todos
 
-- [X]  Resources
-- [X]  Cloud development settings/environments and tools
-- [X]  [The Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-- [X]  Intl.RelativeTimeFormat 
-- [ ]  create npm packages for download, save sharp/mkdirp  (big small images)
-- [ ]  create better solution cache busting 
+- [X] Resources
+- [X] [The Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- [X] Intl.RelativeTimeFormat 
+- [ ] create npm packages for download, save sharp/mkdirp  (big small images)
+- [ ] create better solution cache busting 
 
 [libs](https://github.com/tunailgaz/tunailgaz.github.io/tree/master/libs) <br>
 [time-display](https://github.com/tunailgaz/tunailgaz.github.io/blob/master/libs/time-display.js) <br>
@@ -33,17 +32,40 @@ services:
 ```
 
 ###### ESLint Custom Rules
-```json
-"rules": {
-    "indent": ["error", 4],
-    "semi": ["error", "always"],
-    "require-await": "error",
-    "handle-callback-err": "warn",
-    "no-await-in-loop": "warn",
-    "no-async-promise-executor": "warn",
-    "no-console" : "error",
-    "camelcase" : "off"
-}
+```javascript
+module.exports = {
+    env: {
+        browser: true,
+        es2021: true
+    },
+    extends: [
+        'standard'
+    ],
+    parserOptions: {
+        ecmaVersion: 12
+    },
+    rules: {
+        indent: ['error', 2],
+        semi: [2, 'always'],
+        'require-await': 'error',
+        'handle-callback-err': 'warn',
+        'no-await-in-loop': 'warn',
+        'no-async-promise-executor': 'warn',
+        'no-console': 'warn',
+        camelcase: 'off',
+        'prefer-const': 'off',
+        'padding-line-between-statements': [
+            'error',
+            { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+            { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+            { blankLine: 'always', prev: '*', next: 'return' },
+            { blankLine: 'always', prev: 'directive', next: '*' },
+            { blankLine: 'any', prev: 'directive', next: 'directive' },
+            { blankLine: 'always', prev: ['case', 'default'], next: '*' }
+        ]
+    },
+    eslintIgnore: ['test/playground.js']
+};
 ```
 
 #### Git
@@ -59,50 +81,25 @@ services:
 
 ```bash
 
- git clone -b branchx https://tunailgaz@github.com/tunailgaz/xx 
+ git clone -b branchx https://tunailgaz@github.com/tunailgaz/xx foldername
 
 # delete local tag '12345'
 git tag -d 12345
+
 # delete remote tag '12345' (eg, GitHub version too)
 git push origin :refs/tags/12345
+
 # alternative approach
 git push --delete origin tagName
+
 git tag -d tagName
 
 
-git checkout v1.0.1
-git checkout -
-
-git branch -a
 git branch -d dev
 # --delete --force
 git branch -D 
 
-# Rebase example
-git checkout feature
-git checkout -b temp
-git rebase -i master
-
-# Above will drop you in an editor and pick the changes you want ala:
-pick 7266df7 First change
-pick 1b3f7df Another change
-pick 5bbf56f Last change
-
-# Rebase b44c147..5bbf56f onto b44c147
-#
-# Commands:
-# pick = use commit
-# edit = use commit, but stop for amending
-# squash = use commit, but meld into previous commit
-#
-# If you remove a line here THAT COMMIT WILL BE LOST.
-# However, if you remove everything, the rebase will be aborted.
-#
-
-git checkout master
-git pull . temp
 git branch -d temp
-
 ```
 
 # DevTools
@@ -160,6 +157,8 @@ extensions:
     -   Accept arguments  `@cmd /k "%CMDER_ROOT%\vendor\init.bat && %~1"`
     -   Usage %CMDER_ROOT%\cmder_shell.bat "npx flow"
     -   Cmder Aliases
+
+
 ```text
     cd=cd /d $*
     aliases=doskey /macros
@@ -469,9 +468,6 @@ netstat -aon | find /i "listening" | grep 3306
 
 [icann lookup](https://lookup.icann.org/)
 
-[css generate colors](https://coolors.co/780116-f7b538-db7c26-d8572a-c32f27)
-
-[css color](https://color.adobe.com/create/color-wheel/)
 
 [image optimization](https://squoosh.app/)
 
@@ -494,13 +490,6 @@ netstat -aon | find /i "listening" | grep 3306
 [free images](https://pixabay.com/tr/)
 
 [github actions](https://www.bytesized.xyz/github-actions-tutorial)
-
-[learning git branch](https://learngitbranching.js.org/)
-
-
-##### check later
-
-[flowy css / js to create flows](https://github.com/alyssaxuu/flowy)
 
 
 
