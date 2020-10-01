@@ -146,7 +146,9 @@ extensions:
     "licenser.useSingleLineStyle": false,
     "licenser.license": "GPLv3",
     "editor.tabCompletion": "on",
-    "editor.snippetSuggestions": "top"
+    "editor.snippetSuggestions": "top",
+    "workbench.tree.indent": 30,
+    "workbench.tree.renderIndentGuides": "always"
 }
 
 ```
