@@ -32,6 +32,9 @@ services:
 ```
 
 ###### ESLint Custom Rules
+
+- [ ] Provide `"eslintIgnore": ["test/playground.js"],` to package.json file to ignore eslint checks 
+
 ```javascript
 module.exports = {
     env: {
@@ -63,8 +66,7 @@ module.exports = {
             { blankLine: 'any', prev: 'directive', next: 'directive' },
             { blankLine: 'always', prev: ['case', 'default'], next: '*' }
         ]
-    },
-    eslintIgnore: ['test/playground.js']
+    }
 };
 ```
 
