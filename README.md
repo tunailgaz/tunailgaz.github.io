@@ -131,6 +131,7 @@ git branch -d temp
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
+    "window.title": "${rootName}"
 }
 
 ```
